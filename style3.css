@@ -1,0 +1,47 @@
+h1 {
+  font-size: 120px;
+  text-shadow: 2px 1px;
+  text-align: center;
+  color: #051923;
+  background-color: #00a6fb;
+  font-family: Gemunu Libre, sirif sans-serif;
+}
+
+body {
+  background-color: #0582ca;
+}
+
+label {
+  font-size: 50px;
+  color: #051923;
+  background: rgba(0, 53, 84, 0.1);
+  border-left: 10px solid;
+  border-color: #006494;
+}
+
+#button {
+  display: inline-block;
+  padding: 30px 50px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  background-color: #006494;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #000000;
+}
+
+input[type="number"] {
+  padding: 10px 30px;
+  font-size: 30px;
+}
+
+hr {
+  width: 45%;
+  text-align: left;
+  margin-left: 0px;
+  border: 7px solid #006494;
+}

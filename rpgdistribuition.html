@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+    </style>
+    <link rel="stylesheet" href="style3.css" />
+    <title>Distribuição de Pontos</title>
+  </head>
+  <body>
+    <h1>Distribuição de Pontos</h1>
+
+    <form>
+      <div>
+        <label for="valor1">Precisão</label>
+        <input
+          type="number"
+          id="valor1"
+          name="valor1"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor2">Canalização</label>
+        <input
+          type="number"
+          id="valor2"
+          name="valor2"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor3">Agilidade</label>
+        <input
+          type="number"
+          id="valor3"
+          name="valor3"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor4">Vigor</label>
+        <input
+          type="number"
+          id="valor4"
+          name="valor4"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor5">Brutalidade</label>
+        <input
+          type="number"
+          id="valor5"
+          name="valor5"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor6">Destreza</label>
+        <input
+          type="number"
+          id="valor6"
+          name="valor6"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor7">Sobrevivência</label>
+        <input
+          type="number"
+          id="valor7"
+          name="valor7"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor8">História</label>
+        <input
+          type="number"
+          id="valor8"
+          name="valor8"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor9">Furtividade</label>
+        <input
+          type="number"
+          id="valor9"
+          name="valor9"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor10">Percepção</label>
+        <input
+          type="number"
+          id="valor10"
+          name="valor10"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor11">Performance</label>
+        <input
+          type="number"
+          id="valor11"
+          name="valor11"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor12">Tecnologia</label>
+        <input
+          type="number"
+          id="valor12"
+          name="valor12"
+          value="none0"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor13">Carisma</label>
+        <input
+          type="number"
+          id="valor13"
+          name="valor13"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor14">Intimidação</label>
+        <input
+          type="number"
+          id="valor14"
+          name="valor14"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor15">Intuição</label>
+        <input
+          type="number"
+          id="valor15"
+          name="valor15"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <label for="valor16">Vontade</label>
+        <input
+          type="number"
+          id="valor16"
+          name="valor16"
+          value="none"
+          min="-1"
+          max="4"
+        /><br /><br />
+
+        <br />
+        <hr />
+        <br />
+        <br />
+      </div>
+
+      <input
+        type="button"
+        id="button"
+        value="Calcular"
+        onclick="calcularTotal()"
+      /><br /><br />
+
+      <br />
+      <br />
+      <br />
+
+      <label for="total">Total:</label>
+      <input type="number" id="total" name="total" readonly />
+    </form>
+
+    <script>
+      function calcularTotal() {
+        var Precisão = parseInt(document.getElementById("valor1").value);
+        var Canalização = parseInt(document.getElementById("valor2").value);
+        var Agilidade = parseInt(document.getElementById("valor3").value);
+        var Vigor = parseInt(document.getElementById("valor4").value);
+        var Brutalidade = parseInt(document.getElementById("valor5").value);
+        var Destreza = parseInt(document.getElementById("valor6").value);
+        var Sobrevivência = parseInt(document.getElementById("valor7").value);
+        var História = parseInt(document.getElementById("valor8").value);
+        var Furtividade = parseInt(document.getElementById("valor9").value);
+        var Percepção = parseInt(document.getElementById("valor10").value);
+        var Performance = parseInt(document.getElementById("valor11").value);
+        var Tecnologia = parseInt(document.getElementById("valor12").value);
+        var Carisma = parseInt(document.getElementById("valor13").value);
+        var Intimidação = parseInt(document.getElementById("valor14").value);
+        var Intuição = parseInt(document.getElementById("valor15").value);
+        var Vontade = parseInt(document.getElementById("valor16").value);
+
+        var total =
+          Precisão +
+          Canalização +
+          Agilidade +
+          Vigor +
+          Brutalidade +
+          Destreza +
+          Sobrevivência +
+          História +
+          Furtividade +
+          Percepção +
+          Performance +
+          Tecnologia +
+          Carisma +
+          Intimidação +
+          Intuição +
+          Vontade;
+
+        if (total > 30) {
+          alert("A soma dos valores não pode ser maior do que 30.");
+        } else {
+          document.getElementById("total").value = total;
+        }
+
+        if (total < 30) {
+          alert("A soma dos valores não pode ser menor do que 30.");
+        } else {
+          document.getElementById("total").value = total;
+        }
+      }
+    </script>
+  </body>
+</html>
